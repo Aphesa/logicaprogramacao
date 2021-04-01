@@ -16,16 +16,18 @@ def converte_entrada(texto):
     lista_formatada.append(num)
   return lista_formatada
   
-def processar_numeros(lista):
-  lista=[]
-  soma=0
-  i=0
+def processa_numeros(lista):
+  lista = []
+  soma = 0
+  elementos = len(lista)
   for num in lista:
-    soma+=num
-    i+=1
-  return (soma,i)
+    soma += num 
+  return (soma, elementos)
+  
+retorno = processa_numeros([])
+print(retorno)
 
-def main(lista_dos_numeros):
+def main():
   i=soma_index[1]
   soma=soma_index[0]
   media=soma/i
