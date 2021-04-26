@@ -64,7 +64,7 @@ print (sum(list(filter(lambda numb: numb >= 4, lista_numeros))))
 
 #Imprima a média dessa lista
 
-
+lista_numeros = [3,8,9,1,0,2]
 print (sum(lista_numeros)/len(lista_numeros))
 
 #Imprima essa lista como números separados por barra vertical. Exemplo: 3|8|9|1|0|2
@@ -79,8 +79,8 @@ print (sorted(lista_numeros))
 
 #Ordene a lista acima na ordem decrescente
 
-lista_numeros = [3,8,9,1,0,2
-print (sorted(lista_numeros, reverse = True))
+lista_numeros = [3,8,9,1,0,2]
+print(sorted(lista_numeros, reverse = True))
                  
 #Use a lista lista_numeros = [ 4, 5, 2, 0, 9 ]
                  
@@ -92,7 +92,7 @@ print(lista_numeros[:])
 #Imprime a lista dos 3 primeiros elementos dessa lista
 
 lista_numeros = [ 4, 5, 2, 0, 9 ]
-print(lista_numero([:3])
+print(lista_numeros[:3])
   
 #Imprima os dois menores valores dessa lista
 
@@ -102,11 +102,11 @@ print(sorted(lista_numeros)[:2])
 #Imprima os três maiores valores dessa lista
 
 lista_numeros = [ 4, 5, 2, 0, 9 ]
-print(sorted(lista_numeros, reverse = true)[:3])
+print(sorted(lista_numeros, reverse = True)[:3])
       
 #Imprima uma lista de números de 1 a 10
 
-print (list(x+1 for x in range(10)))
+print(list(x+1 for x in range(10)))
       
 #Imprima uma lista de números pares de 0 a 20
 
@@ -114,7 +114,9 @@ print(list(x for x in range(21) if x % 2 == 0))
       
 #Imprima uma lista de 20 números aleatórios
 
-print ([randint(1, 100) for x in range(20)])
+from random import sample
+sorteados = sample(range(0, 999), 20)
+print(sorteados)
       
 #Converta a lista = ["alo", "Alo", "aLO", alO"] em uma lista de elementos com apenas letras maísculas
 
